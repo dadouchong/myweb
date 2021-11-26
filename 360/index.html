@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360极速浏览器</title>
+    <!-- 注意要把这个fullpage文件放到index文件的上方 -->
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <!-- 固定导航栏 -->
+    <div class="header">
+        <div class="headerContent">
+            <img src="images/logo.png" alt="">
+            <div class="nav">
+                <a href="bankuai.html">论坛</a>
+                <a href="#">扩展</a>
+                <a href="#">Mac版</a>
+            </div>
+        </div>
+    </div>
+    <!-- 全屏滚动的代码 -->
+    <div id="fullpage">
+        <!-- 几个屏幕几个div -->
+        <!-- 第一屏幕 -->
+        <div class="section section1">
+            <div class="title-box">
+                <p>畅快浏览 极致体验</p>
+                <a href="#"></a>
+            </div>
+            <!-- 第一个小球 -->
+            <img src="images/ball1.png" alt="" class="ball1">
+            <!-- 第二个小球 -->
+            <img src="images/ball2.png" alt="" class="ball2">
+            <!-- 卫星图片 -->
+            <img src="images/ship.png" alt="" class="ship">
+        </div>
+
+        <!-- 第二屏幕 -->
+        <div class="section">
+            <!-- 文字模块 -->
+            <div class="word-content">
+                <p class="bigword">极速</p>
+                <p class="line"></p>
+                <p class="midword">Chromium78全新内核</p>
+                <p class="smallword">性能强劲，快如闪电</p>
+                <a href="#"></a>
+            </div>
+
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source src="images/video1.mp4" type="video/mp4">
+                    您的浏览器版本太低，不能播放该视频
+            </video>
+        </div>
+
+        <!-- 第三屏幕 -->
+        <div class="section">
+             <!-- 文字模块 -->
+             <div class="word-content">
+                <p class="bigword">极酷</p>
+                <p class="line"></p>
+                <p class="midword">暗夜炫黑模式</p>
+                <p class="smallword">定义酷，定义你</p>
+                <a href="#"></a>
+            </div>
+
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source src="images/video2.mp4" type="video/mp4">
+                    您的浏览器版本太低，不能播放该视频
+            </video>
+        </div>
+
+        <!-- 第四屏幕 -->
+        <div class="section">
+             <!-- 文字模块 -->
+             <div class="word-content">
+                <p class="bigword">级安全</p>
+                <p class="line"></p>
+                <p class="midword">DNS加密防劫持</p>
+                <p class="smallword">安全升级，肆意无忌</p>
+                <a href="#"></a>
+            </div>
+
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source src="images/video3.mp4" type="video/mp4">
+                    您的浏览器版本太低，不能播放该视频
+            </video>
+        </div>
+
+        <!-- 第五屏幕 -->
+        <div class="section">
+             <!-- 文字模块 -->
+             <div class="word-content">
+                <p class="bigword">极视界</p>
+                <p class="line"></p>
+                <p class="midword">4K高清视频播放</p>
+                <p class="smallword">还原真实之美，尽显万物本色</p>
+                <a href="#"></a>
+            </div>
+
+            <video autoplay="autoplay" loop="loop" muted="muted">
+                <source src="images/video4.mp4" type="video/mp4">
+                    您的浏览器版本太低，不能播放该视频
+            </video>
+
+            <!-- 底部模块 -->
+            <div class="footer">
+                Copyright © 2005-2021 360.CN All Rights Reserved 360互联网安全中心 隐私权政策 京ICP证080047号
+                </br><img src="images/icon.png">京公网安备 11000002000006号
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- 必须先引入 jQuary到js文件 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <!-- 必须放到这里 -->
+    <script>
+       $(function () {
+           $('#fullpage').fullpage({
+              'navigation': true,
+           });
+       });
+    </script>
+</body>
+</html>

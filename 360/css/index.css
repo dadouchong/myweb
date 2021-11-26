@@ -1,0 +1,188 @@
+/* 清除内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    background-color: #010001;
+    /* 约束最小屏幕 */
+    min-width: 1200px;
+}
+/* 固定导航栏开始 */
+.header {
+    /* 固定定位 */
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 48px;
+
+    z-index: 99;
+}
+.headerContent {
+    width: 1200px;
+    height: 48px;
+    margin: auto;
+}
+.headerContent img{
+    float: left;
+    margin-top: 10px;
+}
+.headerContent .nav{
+    float: right;
+    height: 48px;
+    /* 如果行高等于高度，则单行的文字会垂直居中 */
+    line-height: 48px;
+}
+.headerContent .nav a{
+    color: #a4a4a4;
+    margin-left: 40px;
+}
+.section1 {
+    background-image: url(../images/section1_bg.jpg);
+    /* 让我们图拍呢在盒子内水平和垂直居中 */
+    background-position: center;
+}
+.title-box {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+}
+.title-box p {
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    /* 字间距写法 */
+    letter-spacing: 2px;
+}
+.title-box a {
+    display: block;
+    width: 300px;
+    height: 60px;
+    background-image: url(../images/links.png);
+    margin: auto;
+}
+/* 鼠标经过a的写法 */
+.title-box a:hover{
+    background-position: -300px 0;
+}
+
+.ball1 {
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    width: 13%;
+
+    /* 调用动画 */
+    animation: ball 5s linear infinite alternate;
+}
+.ball2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 22%;
+    
+    /* 调用动画 */
+    animation: ball 7s linear infinite alternate;
+}
+
+/* 1.创建动画 */
+@keyframes ball {
+    from{
+        margin-top: 0;
+    }
+    to {
+        margin-top: -40px;
+    }
+}
+
+.ship {
+    position: absolute;
+    top: 40%;
+    left: 64%;
+    width: 7%;
+    /* 调用动画 */
+    animation: ship 10s linear infinite alternate;
+    
+}
+
+@keyframes ship {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(60deg);
+    }
+}
+
+/* 第二屏视频 */
+.section video {
+    width: 100%;
+    height: 100%;
+}
+
+.word-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18%;
+}
+
+/* 使全部的屏的文字颜色为白色 */
+.section {
+    color: #ffffff;
+}
+
+.bigword {
+    font-size: 60px;
+
+}
+.midword {
+    font-size: 36px;
+}
+.smallword {
+    font-size: 16px;
+}
+.word-content a {
+    display: block;
+    width: 200px;
+    height: 48px;
+    margin-top: 50px;
+    background-image: url(../images/link2.png);
+
+}
+.word-content .line {
+    width: 28px;
+    height: 3px;
+    background-color: #5e5e5e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.word-content a:hover {
+    background-position: -200px 0;
+}
+
+
+/* 底部模块开始 */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #131415;
+    text-align: center;
+    padding-top: 38px;
+    color: #4a4a4a;
+    line-height:22px;
+    font-size: 12px;
+}
+.footer img{
+    vertical-align: middle;
+}
+
+
